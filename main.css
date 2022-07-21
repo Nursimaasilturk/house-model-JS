@@ -1,0 +1,116 @@
+body {
+  background-color: bisque;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #444;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .page-header {
+  background-color: coral;
+  width: 50%;
+  height: 100%;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 100%;
+  height: 90vh;
+}
+main .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .content .tab-panels {
+  width: 70%;
+  height: 85%;
+}
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tab-panels ul li {
+  list-style: none;
+  background-color: gold;
+  border: 3px solid gold;
+  width: 22vh;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+  color: indianred;
+  margin: 0;
+  cursor: pointer;
+}
+.tab-panels ul li:hover {
+  border: 3px solid salmon;
+}
+.tab-panels ul li.active {
+  border: 3px solid salmon;
+}
+main .content .tab-panels .panel {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+  border: 3px solid salmon;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+main .content .tab-panels .panel.active {
+  display: block;
+}
+main .content .tab-panels .panel .panel-card {
+  width: 80%;
+  height: 90%;
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .content .tab-panels .panel .panel-card .card--text {
+  color: black;
+}
+main .content .tab-panels .panel .panel-card .card--image {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .content .tab-panels .panel .panel-card .card--image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  border: 2px solid black;
+}
+main .content .tab-panels .panel .panel-card button {
+  width: 20vh;
+  height: 5vh;
+  border: none;
+  background-color: rgb(146, 77, 38);
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+main .content .tab-panels .panel .panel-card button:hover {
+  border: 2px solid salmon;
+  background-color: #fff;
+  color: coral;
+}

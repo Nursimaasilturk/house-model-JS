@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Tab Panel</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-header">Home Models</h1>
+    </header>
+    <main>
+      <div class="content">
+        <div class="tab-panels">
+          <ul class="tabs">
+            <li rel="panel1" class="active">French Country House</li>
+            <li rel="panel2">Tudor House</li>
+            <li rel="panel3">Mediterranean House</li>
+            <li rel="panel4">Victorian House</li>
+          </ul>
+          <div id="panel1" class="panel active">
+            <div class="panel-card">
+              <div class="card--image">
+                <img src="/french.png" alt="french_country_house" />
+              </div>
+              <div class="card--text">
+                Country French-style homes in the United States date back to the
+                18th century. At that time, France occupied much of eastern
+                North America, with settlements scattered along the principal
+                waterways, such as the St. Lawrence, Great Lakes, and
+                Mississippi valleys. French building traditions started to fade
+                after President Thomas Jefferson purchased Louisiana in 1803,
+                but this house style remained popular in New Orleans and other
+                areas for another half-century.
+              </div>
+              <div class="card--button">
+                <button id="french">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div id="panel2" class="panel">
+            <div class="panel-card">
+              <div class="card--image">
+                <img src="./tudor.png" alt="tudor_house" />
+              </div>
+              <div class="card--text">
+                This style's name suggests a close connection to the
+                16th-century architecture of England's Tudor dynasty. But the
+                Tudor houses we see today are modern-day reinventions loosely
+                based on a variety of Late Medieval English prototypes.
+              </div>
+              <div class="card--button">
+                <button id="tudor">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div id="panel3" class="panel">
+            <div class="panel-card">
+              <div class="card--image">
+                <img src="./mediterranean.png" alt="mediterranean_house" />
+              </div>
+              <div class="card--text">
+                Mediterranean-style architecture gave birth to the Spanish
+                Colonial Revival style that flourished in Southern California
+                during the 1920s and 1930s following a noteworthy appearance at
+                the Panama-California Exposition of 1915.
+              </div>
+              <div class="card--button">
+                <button id="medi">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div id="panel4" class="panel">
+            <div class="panel-card">
+              <div class="card--image">
+                <img src="victorian.png" alt="victorian_house" />
+              </div>
+              <div class="card--text">
+                There are several styles of houses (such as Queen Anne) that
+                fall within the Victorian era, which lasted from 1837 to
+                1901.Homes of the Victorian Era had interiors that were
+                romantic, distinctive, and abundant in detail, from the patterns
+                of their fabrics to their colors and textures.
+              </div>
+              <div class="card--button">
+                <button id="victorian">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
